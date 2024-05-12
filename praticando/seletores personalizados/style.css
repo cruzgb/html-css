@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@font-face {
+    font-family: Old;
+    src: url(fonts/varsity_regular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+Em HTML é id, em CSS é #
+Em HTML é class, em CSS é .
+*/
+body{
+    background-color: #e7d2a3;
+}
+main{
+    background-color: rgb(167, 224, 167);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    width: auto;
+    padding: 50px;
+    margin: 275px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px rgb(122, 163, 122);
+}
+h1{
+    color: rgb(42, 161, 42);
+}
+h1#principal{
+    text-align: center;
+    background-color: rgb(42, 161, 42);
+    color: white;
+    font-family: 'Old', Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+h2{
+    color: rgb(30, 99, 30);
+}
+p{
+    text-indent: 20px;
+}
+p#pprincipal{
+    text-align: right;
+}

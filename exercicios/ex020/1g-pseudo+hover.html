@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes + Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div:hover{
+            color: blue;
+        }
+        div>p{
+            display: none;
+        }
+        div:hover>p{
+            display: block;
+            background-color: lightgray;
+            border: 1px solid black;
+            height: 100px;
+            width: 100px;
+            color: black;
+            text-align: center;
+        }
+        .especial::before{
+            content: '⇒ ';
+        }
+        .especial::after{
+            content: ' ⇐';
+        }
+    </style>
+</head>
+<body>
+    <h1>Usando um pouco de cada</h1>
+    <p>passe o mouse sobre a frase abaixo</p>
+    <div>
+        Passe o mouse aqui!
+        <p>Olha só que legal!</p>
+    </div>
+    <h1>Pseudo-Elemento</h1>
+    <p class="especial">Uso de Pseudo-Elemento</p>
+</body>
+</html>

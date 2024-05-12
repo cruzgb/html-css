@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            min-width: 280px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        img{
+            width: 100%;
+        }
+ 
+        aside{
+            background-color: lightgray
+        }       
+
+        aside>ul{
+        list-style-position: outside;
+        columns: 2;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla impedit sint perferendis quod fugiat hic, voluptatibus dolor sit omnis modi inventore adipisci cum repellat qui quasi unde vel laudantium. Quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus iure, doloremque sint, quidem illum fuga necessitatibus assumenda expedita reprehenderit omnis voluptatum fit. Eveniet excepturi neque alias ut pariatur provident, itaque cupiditate impedit. Dolore corrupti assumenda minima iure deleniti, cupiditate non! Nihil voludoloribus!</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg" type="image/jpg">
+            <img src="imagens/irina-blok.jpg" alt="irina blok">
+        </picture>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla impedit sint perferendis quod fugiat hic, voluptatibuehenderit omnis voluptatum fugit. Molestiae explicabo obcaecati placeat officiis neque expedita nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet excepturi neque alias ut pariatur provident, itaque cupiditate impedit. Dolore corrupti assumenda minima iure deleniti, cupiditate non! Nihil voludoloribus!</p>
+    
+        <aside>
+            <ul>
+                <li>Pão</li>
+                <li>Carne</li>
+                <li>Frango</li>
+            </ul>
+        </aside>
+
+    </main>
+</body>
+</html>

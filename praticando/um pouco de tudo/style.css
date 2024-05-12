@@ -1,0 +1,18 @@
+@charset "UTF-8";
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+}
+h1{
+    color: whitesmoke;
+}
+h2{
+    color: rgb(240, 240, 240);
+}
+p{
+    text-align: justify;
+    color: whitesmoke;
+}
+li{
+    color: rgb(51, 50, 50);
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color:darkred
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial{
+            background-color: #ff9393;
+        }
+        .especial::before{
+            content: ' ⇒';
+            font-weight: normal; 
+            text-decoration: none;
+        }
+        .especial::after{
+            content: ' ⇐';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/07skyz" target="_blank" rel="external">Repositório Github</a></li>
+        <li><a href="https://www.youtube.com/channel/UCXZYoqREFShMYduqC2Iwk5Q" target="_blank" rel="external">Canal do Youtube</a></li>
+        <li><a href="https://www.instagram.com/bielldcs/" target="_blank" rel="external" class="especial">Instagram</a></li>
+    </ul>
+</body>
+</html>

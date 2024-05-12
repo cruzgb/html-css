@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: yellow;
+            text-decoration: none;
+        }
+        a:visited{
+            color: darkorange;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: orangered;
+        }
+        a{
+            font-weight: bold;
+        }
+        .principal::after{
+            content: ' ⇐';
+        }
+        .principal::before{
+            content: '⇒ ';
+        }
+        .principal{
+            background-color: rgba(139, 0, 0, 0.87);
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.instagram.com" target="_blank" rel="external">Instagram</a></li>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="external">Youtube</a></li>
+        <li><a href="https://discord.com/" target="_blank" rel="external" class="principal">Discord</a></li>
+    </ul>
+</body>
+</html>
