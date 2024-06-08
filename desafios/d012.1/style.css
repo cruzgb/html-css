@@ -1,6 +1,52 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family:'Passion One';
+    src: url(Passion_One/PassionOne-Bold.ttf) format(truetype);
+}
 :root{
     --cor0: #000000;
     --cor1: #ffffff;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: var(--cor0);
+    height: 270px;
+}
+
+header>h1{
+    color: var(--cor1);
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'Passion One', Arial, sans-serif;
+    font-size: 6em;
+}
+
+span.titulo{
+    font-size: 1.4em;
+}
+
+header>p{
+    color: var(--cor1);
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+header a{
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: bold;
+}
+
+header a:hover{
+    text-decoration: underline;
+}
+
+section>pre{
+    white-space: pre-line;
 }
