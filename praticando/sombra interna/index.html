@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombra interna</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 3em;
+        }
+
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+        }
+
+        div.quadrado{
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            box-shadow: inset 10px 10px 5px black;
+        }
+
+        div.quadrado2{
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            margin-top: 10px;
+            box-shadow: 10px 10px 5px black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Shadow</h1>
+    <p>Aqui temos dois exemplos de box-shadow. Interna e Externa!</p>
+    <div class="quadrado"></div>
+    <div class="quadrado2"></div>
+</body>
+</html>
