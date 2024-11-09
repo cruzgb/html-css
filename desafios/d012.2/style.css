@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+:root{
+    --cor0: #000000;
+    --cor1: #ffffff;
+}
+
+@font-face {
+    font-family:'Passion One';
+    src: url("Passion_One/PassionOne-Bold.ttf");
+}
+@font-face {
+    font-family:'Sriracha';
+    src: url(Sriracha/Sriracha-Regular.ttf);
+}
+
+*{
+    margin: 0px;
+}
+
+header{
+    background-color: var(--cor0);
+    height: 220px;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+header>h1{
+    font-variant: small-caps;
+    color: var(--cor1);
+    font-family: 'Passion One', Arial, Helvetica, sans-serif;
+    padding-top: 50px;
+    font-size: 9.5vh;
+}
+
+nav{
+    color: var(--cor1);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav>a{
+    color: var(--cor1);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav>a:hover{
+    text-decoration: underline;
+}
+
+section>p{
+    font-family: 'Sriracha', Arial, Helvetica, sans-serif;
+    line-height: 2em;
+    font-size: 3vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+footer{
+    background-color: var(--cor0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--cor1);
+    text-align: center;
+    padding: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: bold;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
