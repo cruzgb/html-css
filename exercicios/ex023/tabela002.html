@@ -12,29 +12,6 @@
         table{
             width: 500px;
             border-collapse: collapse;
-            position: relative;
-        }
-
-        caption{
-            font-size: 1.5em;
-            font-weight: bold;
-            padding: 10px;
-            background-color: lightgray;
-        }
-
-        thead th{
-            position: sticky;
-            top: -1px;
-            background-color: gray;
-        }
-        
-        thead, tfoot{
-            background-color: gray;
-            color: white;
-        }
-
-        tbody > tr:nth-child(even){
-            background-color: lightgray;
         }
 
         td, th{
@@ -44,6 +21,11 @@
 
         td.num{
             text-align: right;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
         }
     </style>
 </head>
@@ -60,16 +42,13 @@
             TFOOT
                 TR, TD, TH
     -->
+
     <table>
-        <caption>
-            População das Unidades Federativas
-        </caption>
         <thead>
-            <tr>
-                <th scope="col">Estado</th>
-                <th scope="col" style="width: 100px;">População</th>
-            </tr>
+            <th>Estado</th>
+            <th>População</th>
         </thead>
+
         <tbody>
             <tr>
                 <td>São Paulo</td>
@@ -180,33 +159,13 @@
                 <td class="num">716 793</td>
             </tr>
         </tbody>
+
         <tfoot>
             <tr>
-                <th scope="row">Total de Habitantes</th>
+                <th>Total de Habitantes</th>
                 <td class="num"><strong>202 476 750</strong></td>
             </tr>
         </tfoot>
     </table>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error sed iste voluptatum assumenda laudantium deserunt, at illum labore cumque temporibus veniam perferendis dolorem odio obcaecati laborum, doloremque ea ab dolores!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cumque iure unde dolorem harum molestiae, porro odio recusandae vel vero, aperiam ad sed incidunt quisquam veniam neque velit laboriosam tempore?
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis deleniti architecto itaque perferendis minima aliquid ipsum aperiam dolores quod perspiciatis blanditiis mollitia, asperiores quaerat rem. Ad officiis velit sed.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione accusamus magni, soluta doloremque suscipit, iusto, error quis hic velit odio nobis dicta ducimus consequatur. Ad autem vero magni iusto repellendus!
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error sed iste voluptatum assumenda laudantium deserunt, at illum labore cumque temporibus veniam perferendis dolorem odio obcaecati laborum, doloremque ea ab dolores!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cumque iure unde dolorem harum molestiae, porro odio recusandae vel vero, aperiam ad sed incidunt quisquam veniam neque velit laboriosam tempore?
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis deleniti architecto itaque perferendis minima aliquid ipsum aperiam dolores quod perspiciatis blanditiis mollitia, asperiores quaerat rem. Ad officiis velit sed.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione accusamus magni, soluta doloremque suscipit, iusto, error quis hic velit odio nobis dicta ducimus consequatur. Ad autem vero magni iusto repellendus!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error sed iste voluptatum assumenda laudantium deserunt, at illum labore cumque temporibus veniam perferendis dolorem odio obcaecati laborum, doloremque ea ab dolores!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cumque iure unde dolorem harum molestiae, porro odio recusandae vel vero, aperiam ad sed incidunt quisquam veniam neque velit laboriosam tempore?
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis deleniti architecto itaque perferendis minima aliquid ipsum aperiam dolores quod perspiciatis blanditiis mollitia, asperiores quaerat rem. Ad officiis velit sed.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione accusamus magni, soluta doloremque suscipit, iusto, error quis hic velit odio nobis dicta ducimus consequatur. Ad autem vero magni iusto repellendus!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error sed iste voluptatum assumenda laudantium deserunt, at illum labore cumque temporibus veniam perferendis dolorem odio obcaecati laborum, doloremque ea ab dolores!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cumque iure unde dolorem harum molestiae, porro odio recusandae vel vero, aperiam ad sed incidunt quisquam veniam neque velit laboriosam tempore?
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis deleniti architecto itaque perferendis minima aliquid ipsum aperiam dolores quod perspiciatis blanditiis mollitia, asperiores quaerat rem. Ad officiis velit sed.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione accusamus magni, soluta doloremque suscipit, iusto, error quis hic velit odio nobis dicta ducimus consequatur. Ad autem vero magni iusto repellendus!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error sed iste voluptatum assumenda laudantium deserunt, at illum labore cumque temporibus veniam perferendis dolorem odio obcaecati laborum, doloremque ea ab dolores!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cumque iure unde dolorem harum molestiae, porro odio recusandae vel vero, aperiam ad sed incidunt quisquam veniam neque velit laboriosam tempore?
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis deleniti architecto itaque perferendis minima aliquid ipsum aperiam dolores quod perspiciatis blanditiis mollitia, asperiores quaerat rem. Ad officiis velit sed.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione accusamus magni, soluta doloremque suscipit, iusto, error quis hic velit odio nobis dicta ducimus consequatur. Ad autem vero magni iusto repellendus!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error sed iste voluptatum assumenda laudantium deserunt, at illum labore cumque temporibus veniam perferendis dolorem odio obcaecati laborum, doloremque ea ab dolores!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis cumque iure unde dolorem harum molestiae, porro odio recusandae vel vero, aperiam ad sed incidunt quisquam veniam neque velit laboriosam tempore?
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum nobis deleniti architecto itaque perferendis minima aliquid ipsum aperiam dolores quod perspiciatis blanditiis mollitia, asperiores quaerat rem. Ad officiis velit sed.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione accusamus magni, soluta doloremque suscipit, iusto, error quis hic velit odio nobis dicta ducimus consequatur. Ad autem vero magni iusto repellendus!
-    </p>
 </body>
 </html>
