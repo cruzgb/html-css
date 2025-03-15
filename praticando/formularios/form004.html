@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required minlength="8" maxlength="30" autocomplete="name" placeholder="Nome Completo">
+        </p>
+
+        <p>
+            <label for="ieamail">Email:</label>
+            <input type="email" name="email" id="iemail" required minlength="10" maxlength="30" autocomplete="email" placeholder="...@gmail.com">
+        </p>
+
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="30" autocomplete="new-password" placeholder="No minimo 8 digitos">
+        </p>
+
+        <p>
+            <label for="idata">Data de Nascimento:</label>
+            <input type="date" name="data" id="idata" required value="2001-04-09">
+        </p>
+
+        <p>
+            <label>Gênero:</label> <br>
+            
+            <label for="imasc">Masculino:</label>
+            <input type="radio" name="gen" id="imasc" value="Masculino">
+
+            <label for="ifem">Feminino:</label>
+            <input type="radio" name="gen" id="ifem" value="Feminino">
+
+            <label for="ioutro">Outro:</label>
+            <input type="radio" name="gen" id="ioutro" value="Outro">
+        </p>
+
+        <p>
+            <label for="iterm">Aceite os termos e condições:</label>
+            <input type="checkbox" name="term" id="iterm" required>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
