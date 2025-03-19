@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fcf2e3;
+        }
+
+        fieldset{
+            background-color: whitesmoke;
+            border-radius: 10px;
+            border: 1.5px solid gray;
+        }
+        
+        legend{
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        label:hover{
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Hobbies Favoritos</legend>
+            <input type="checkbox" name="ler" id="iler" value="Leitura"> <label for="iler">Leitura 📚</label> <br>
+            <input type="checkbox" name="esp" id="iesp" value="Esportes"> <label for="iesp">Esportes ⚽🏀</label> <br>
+            <input type="checkbox" name="mus" id="imus" value="Musica"> <label for="imus">Música 🎵</label> <br>
+            <input type="checkbox" name="pro" id="ipro" value="Programação"> <label for="ipro">Programação 💻</label> <br>
+            <input type="checkbox" name="coz" id="icoz" value="Cozinha"> <label for="icoz">Cozinha 🍳</label> <br>
+            <input type="checkbox" name="pes" id="ipes" value="Pesca"> <label for="ipes">Pesca 🎣</label> <br>
+            <input type="checkbox" name="gam" id="igam" value="Videogames"> <label for="igam">Videogames 🎮</label> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Turno de Estudo</legend>
+            <input type="radio" name="turno" id="iman" value="M"> <label for="iman">Manhã</label>
+            <input type="radio" name="turno" id="itar" value="T"> <label for="itar">Tarde</label>
+            <input type="radio" name="turno" id="inoi" value="N"> <label for="inoi">Noite</label>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
