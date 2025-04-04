@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Cadastre-se</legend>
+            <div>
+                <label for="inome">Nome Completo: </label>
+                <input type="text" name="nome" id="inome" min="12" max="50" required autocomplete="name"> <br>
+
+                <label for="iusu">Nome de Usuário: </label>
+                <input type="text" name="usu" id="iusu" min="4" max="20" required autocomplete="username">
+            </div>
+
+            <div>
+                <label for="isenha">Senha: </label>
+                <input type="password" name="senha" id="isenha" required min="8" max="15" placeholder="Entre 8 e 15 caracteres" autocomplete="new-password"> <br>
+
+                <label for="iconfirm">Confirmar Senha: </label>
+                <input type="password" name="confirm" id="iconfirm" required min="8" max="15" placeholder="Entre 8 e 15 caracteres" autocomplete="current-password">
+            </div>
+
+            <div>
+                <label for="iidade">Idade: </label>
+                <input type="number" name="idade" id="iidade" min="3" max="100" required >
+            </div>
+
+            <div>
+                <label for="iemail">Email: </label>
+                <input type="email" name="email" id="iemail" min="10" placeholder="...@gmail.com" autocomplete="email"> <br>
+
+                <label for="itel">Telefone: </label>
+                <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxxx-xxxx"> <!-- Padrão para telefone brasileiro -->
+            </div>
+
+            <div>
+                <label for="idata">Data de Nascimento: </label>
+                <input type="date" name="data" id="idata" required value="2000-01-02"> <!-- Ano, mês e dia -->
+            </div>
+
+            <div>
+                <p>
+                    Sexo: <br>
+                    <label for="sxmasc">Maculino: </label>
+                    <input type="radio" name="sexo" id="sxmasc" required >
+
+                    <label for="sxfem">Feminino: </label>
+                    <input type="radio" name="sexo" id="sxfem" required checked>
+
+                    <label for="sxoutro">Outro: </label>
+                    <input type="radio" name="sexo" id="sxoutro" required>
+
+                    <label for="sxprefer">Prefiro não dizer: </label>
+                    <input type="radio" name="sexo" id="sxprefer">
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    Tipo de Conta: <br>
+                    <label for="iempre">Empresarial: </label>
+                    <input type="radio" name="type" id="iempre" required>
+
+                    <label for="ipessoal">Pessoal: </label>
+                    <input type="radio" name="type" id="ipessoal" required>
+                </p>
+            </div>
+
+            <div>
+                <label for="iterm">Termos e condições</label>
+                <input type="checkbox" name="term" id="iterm" required>
+            </div>
+
+
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
