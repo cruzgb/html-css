@@ -11,18 +11,18 @@
             <legend>Cadastre-se</legend>
             <div>
                 <label for="inome">Nome Completo: </label>
-                <input type="text" name="nome" id="inome" min="12" max="50" required autocomplete="name"> <br>
+                <input type="text" name="nome" id="inome" minlength="12" maxlength="50" required autocomplete="name"> <br>
 
                 <label for="iusu">Nome de Usuário: </label>
-                <input type="text" name="usu" id="iusu" min="4" max="20" required autocomplete="username">
+                <input type="text" name="usu" id="iusu" minlength="4" maxlength="20" required autocomplete="username">
             </div>
 
             <div>
                 <label for="isenha">Senha: </label>
-                <input type="password" name="senha" id="isenha" required min="8" max="15" placeholder="Entre 8 e 15 caracteres" autocomplete="new-password"> <br>
+                <input type="password" name="senha" id="isenha" required minlength="8" maxlength="15" placeholder="Entre 8 e 15 caracteres" autocomplete="new-password"> <br>
 
                 <label for="iconfirm">Confirmar Senha: </label>
-                <input type="password" name="confirm" id="iconfirm" required min="8" max="15" placeholder="Entre 8 e 15 caracteres" autocomplete="current-password">
+                <input type="password" name="confirm" id="iconfirm" required minlength="8" maxlength="15" placeholder="Entre 8 e 15 caracteres" autocomplete="current-password">
             </div>
 
             <div>
@@ -32,7 +32,7 @@
 
             <div>
                 <label for="iemail">Email: </label>
-                <input type="email" name="email" id="iemail" min="10" placeholder="...@gmail.com" autocomplete="email"> <br>
+                <input type="email" name="email" id="iemail" minlength="10" placeholder="...@gmail.com" autocomplete="email"> <br>
 
                 <label for="itel">Telefone: </label>
                 <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxxx-xxxx"> <!-- Padrão para telefone brasileiro -->
@@ -72,10 +72,33 @@
             </div>
 
             <div>
-                <label for="iterm">Termos e condições</label>
-                <input type="checkbox" name="term" id="iterm" required>
+                <label for="idesc">Descrição: </label> <br>
+                <textarea name="desc" id="idesc" cols="30" rows="7" maxlength="200" placeholder="Diga um pouco sobre você, em uma mensagem de até 200 caracteres aqui!"></textarea>
             </div>
 
+            <div>
+                <label for="ifoto">Foto de perfil: </label> <br>
+                <input type="file" name="foto" id="ifoto" accept="image/">
+            </div>
+
+            <div>
+                <br>
+                <label for="icor">Cor favorita: </label> <br>
+                <input type="color" name="cor" id="icor" value="#AF1212">
+            </div>
+
+            <div>
+                <br>
+                <label for="inivel">Nível de experiência: </label> <br>
+                <input type="range" name="nivel" id="inivel" value="5" max="10" oninput="ival.innerHTML = Number(inivel.value)">
+                <output id="ival">5</output>
+            </div>
+
+            <div>
+                <br>
+                <label for="iterm">Termos e condições: </label>
+                <input type="checkbox" name="term" id="iterm" required>
+            </div>
 
         </fieldset>
 
