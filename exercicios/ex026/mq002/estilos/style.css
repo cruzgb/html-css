@@ -2,6 +2,8 @@
 
 /* Configurações gerais */
 
+/* Nesse caso, as imagens ficam nos outros arquivos CSS, para que possamos criar uma responsividade em diferentes telas. Isso serve para outras coisas, mas o exemplo do dia foi com imagens. */
+
 *{
     margin: 0xp;
     padding: 0px;
