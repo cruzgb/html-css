@@ -15,7 +15,19 @@ html {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    position: relative;
+    overflow: hidden;
 }
+
+  .te-amo {
+    position: absolute;
+    color: #ff4d6d;
+    font-weight: bold;
+    font-size: 24px;
+    pointer-events: none;
+    animation: fadeOut 1.5s forwards;
+    user-select: none;
+  }
 
 p{
     color: white;

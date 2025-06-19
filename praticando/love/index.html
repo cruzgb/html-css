@@ -23,6 +23,24 @@
             Infelizmente seu navegador não suporta elemento de audio. :/
         </audio>
     </div>
+
+    <script>
+  document.addEventListener('click', function(e) {
+    const msg = document.createElement('div');
+    msg.className = 'te-amo';
+    msg.textContent = 'Te amo';
+    // Posiciona onde foi clicado
+    msg.style.left = e.pageX + 'px';
+    msg.style.top = e.pageY + 'px';
+
+    document.body.appendChild(msg);
+
+    // Remove o elemento após a animação (1.5s)
+    setTimeout(() => {
+      msg.remove();
+    }, 1500);
+  });
+</script>
 </body>
 
 </html>
