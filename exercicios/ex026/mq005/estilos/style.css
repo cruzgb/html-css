@@ -38,7 +38,7 @@ header > h1{
 }
 
 #burger{
-    background-color: #333333;
+    background-color: var(--cor2);
     color: white;
     display: block;
     text-align: center;
@@ -47,7 +47,7 @@ header > h1{
 }
 
 #burger:hover{
-    background-color: #b6b6b6;
+    background-color: var(--cor4);
     color: black;
 }
 
