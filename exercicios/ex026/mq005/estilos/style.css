@@ -29,8 +29,30 @@ header > h1{
     color: var(--cor2);
 }
 
-menu{
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+#burger{
+    background-color: #333333;
+    color: white;
     display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burger:hover{
+    background-color: #b6b6b6;
+    color: black;
+}
+
+menu{
+    display: none;
 }
 
 menu > ul{
